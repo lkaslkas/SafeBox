@@ -6,6 +6,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -37,7 +38,7 @@ import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.Stack;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends Activity implements View.OnClickListener{
 
     public static MainActivity ME;
     // 这个是用户切换显示其他View的容器

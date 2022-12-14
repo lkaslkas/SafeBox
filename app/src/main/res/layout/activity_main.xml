@@ -5,20 +5,25 @@
     android:background="@color/deepskyblue"
     android:orientation="vertical">
     <RelativeLayout
+        android:id="@+id/rl_top"
         android:layout_width="match_parent"
+        android:visibility="gone"
         android:layout_height="50dip"
         >
         <Button
+            android:id="@+id/btn_back"
             android:layout_width="40dip"
+            android:visibility="gone"
             android:layout_centerVertical="true"
             android:layout_height="wrap_content"
             android:background="@mipmap/back_normal"
             />
         <TextView
+            android:id="@+id/txt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="系统设置"
+            android:text="SafeBox"
             android:textStyle="bold"
             android:textSize="30dip"
             android:layout_centerInParent="true"
@@ -58,6 +63,8 @@
         android:orientation="horizontal"
         >
         <LinearLayout
+            android:id="@+id/ll_menu"
+            android:visibility="gone"
             android:layout_width="160dip"
             android:gravity="center"
             android:orientation="vertical"
